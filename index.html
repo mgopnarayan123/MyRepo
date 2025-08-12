@@ -13,6 +13,15 @@
         <a href="services.html">Services</a>
         <a href="index.html">Home</a>
     </menu>
-
+ <!-- write your JavaScript code here for RGB color change -->
+    <script>
+        var menuItems = document.querySelectorAll('a');
+        var color = ['red', 'green', 'blue', 'yellow'];
+        var currentIndex = 0;
+        setInterval(function() {    
+            menuItems[currentIndex].style.color = color[currentIndex];
+            currentIndex = (currentIndex + 1) % color.length;
+        }, 1000);
+        </script>  
 </body>
 </html>
